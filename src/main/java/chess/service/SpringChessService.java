@@ -77,9 +77,9 @@ public class SpringChessService {
 
     @Transactional
     public GameStatusRequestsDto roomInfos() {
-        final List<Chess> chessGroup = chessDao.find();
+        final List<Chess> chessGroup = chessDao.findAll();
         return new GameStatusRequestsDto(chessGroup.stream()
-            .map(chess -> new GameStatusRequestDto(chess.getName(), chess.isRunning()))
+            .map(chess -> new GameStatusRequestDto(!chess.isRunning(), chess.getName()))
             .collect(Collectors.toList()));
     }
 

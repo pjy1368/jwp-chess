@@ -141,7 +141,7 @@ public class DBChessDao implements ChessDao {
     }
 
     @Override
-    public List<Chess> find() {
+    public List<Chess> findAll() {
         final String query = "SELECT * FROM chess order by created_date";
 
         final Connection connection = connectionPool.getConnection();

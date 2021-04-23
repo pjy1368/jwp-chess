@@ -14,5 +14,5 @@ public interface ChessDao {
 
     void deleteByName(final String name);
 
-    List<Chess> find();
+    List<Chess> findAll();
 }

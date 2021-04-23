@@ -50,7 +50,7 @@ mainLoad.addEventListener("click", async () => {
 });
 
 mainView.addEventListener("click", async () => {
-    const response = await fetch(basePath + "/api/games/view");
+    const response = await fetch(basePath + "/api/games");
     const body = await response.json();
 
     const roomContainer = document.querySelector(".room-container");
@@ -82,9 +82,9 @@ mainView.addEventListener("click", async () => {
 
         td = document.createElement("td");
         if (gameStatusRequest.gameOver) {
-            td.innerText = "X";
-        } else {
             td.innerText = "O";
+        } else {
+            td.innerText = "X";
         }
         tr.appendChild(td);
         table.appendChild(tr);

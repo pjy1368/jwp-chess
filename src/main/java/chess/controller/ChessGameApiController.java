@@ -40,7 +40,7 @@ public class ChessGameApiController {
         return new ResponseEntity<>(HttpStatus.OK);
     }
 
-    @GetMapping("/view")
+    @GetMapping()
     public ResponseEntity<GameStatusRequestsDto> viewRoom() {
         final GameStatusRequestsDto gameStatusRequestsDto = chessService.roomInfos();
         return new ResponseEntity<>(gameStatusRequestsDto, HttpStatus.CREATED);
