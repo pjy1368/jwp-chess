@@ -8,9 +8,9 @@ public class GameStatusRequestDto {
     public GameStatusRequestDto() {
     }
 
-    public GameStatusRequestDto(boolean isGameOver, String chessName) {
-        this.isGameOver = isGameOver;
+    public GameStatusRequestDto(String chessName, boolean isGameOver) {
         this.chessName = chessName;
+        this.isGameOver = isGameOver;
     }
 
     public String getChessName() {

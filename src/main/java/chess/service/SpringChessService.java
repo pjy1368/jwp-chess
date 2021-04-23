@@ -79,7 +79,7 @@ public class SpringChessService {
     public GameStatusRequestsDto roomInfos() {
         final List<Chess> chessGroup = chessDao.findAll();
         return new GameStatusRequestsDto(chessGroup.stream()
-            .map(chess -> new GameStatusRequestDto(!chess.isRunning(), chess.getName()))
+            .map(chess -> new GameStatusRequestDto(chess.getName(), !chess.isRunning()))
             .collect(Collectors.toList()));
     }
 
