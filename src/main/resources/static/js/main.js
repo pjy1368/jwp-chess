@@ -1,7 +1,7 @@
 const mainStart = document.querySelector("#main-start");
 const mainLoad = document.querySelector("#main-load");
 const mainView = document.querySelector("#main-view");
-const basePath = 'http://54.180.149.9:8080';
+const basePath = 'http://jon-chess.kro.kr:8080';
 
 mainStart.addEventListener("click", async () => {
     let result = window.prompt("게임 이름을 입력해주세요");
@@ -74,7 +74,7 @@ mainView.addEventListener("click", async () => {
     gameStatusRequests.forEach(gameStatusRequest => {
         const tr = document.createElement("tr");
         tr.setAttribute("align", "center");
-        tr.setAttribute("bgcolor", "skybule");
+        tr.setAttribute("bgcolor", "white");
 
         let td = document.createElement("td");
         td.innerText = gameStatusRequest.chessName;
