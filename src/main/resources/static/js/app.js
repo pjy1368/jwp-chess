@@ -5,7 +5,7 @@ const tiles = document.getElementsByClassName("tile");
 const whiteCount = document.querySelector(`#whiteScore strong`);
 const blackCount = document.querySelector(`#blackScore strong`);
 const winner = document.querySelector(`#winner`);
-const basePath = 'http://localhost:8080';
+const basePath = 'http://54.180.149.9:8080';
 
 end.addEventListener("click", async (event) => {
     const item = event.target;
