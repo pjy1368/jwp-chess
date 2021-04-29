@@ -1,7 +1,7 @@
 const mainStart = document.querySelector("#main-start");
 const mainLoad = document.querySelector("#main-load");
 const mainView = document.querySelector("#main-view");
-const basePath = 'http://jon-chess.kro.kr:8080';
+const basePath = 'http://jon-chess.kro.kr';
 
 mainStart.addEventListener("click", async () => {
     let result = window.prompt("게임 이름을 입력해주세요");
