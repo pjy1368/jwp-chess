@@ -37,6 +37,9 @@
 </br></br>
 ![image](https://user-images.githubusercontent.com/56083021/121468591-06505d80-c9f6-11eb-9126-db23294c75a4.png)
 
+## 팀원
+- 박진영 (제이온)
+- 김태정 (검프)
 ---
 ## Commit Convention
 
